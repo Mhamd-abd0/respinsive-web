@@ -1,0 +1,295 @@
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+}
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    background-color: #474747;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-nav .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-nav .phone p {
+    color: white;
+    margin-bottom: 0;
+}
+
+.top-nav .social {
+    display: flex;
+    gap: 15px;
+}
+
+.top-nav .social img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Main Navigation */
+.main-nav {
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+
+
+/* Services Section */
+@import url('./BG.png');
+
+
+
+h1, h2, h3, h4, .serif-font {
+font-family: 'Playfair Display', serif;
+}
+
+.hero-section {
+position: relative;
+height: 400px;
+background-image: url('/api/placeholder/800/400');
+background-size: cover;
+background-position: center;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.hero-section::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+}
+
+.play-button {
+width: 60px;
+height: 60px;
+background-color: white;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+.play-button i {
+color: #333;
+font-size: 24px;
+}
+
+.features-section {
+padding: 50px 0;
+background-color: #f9f9f9;
+}
+
+.feature-box {
+text-align: center;
+padding: 20px 10px;
+}
+
+.feature-icon {
+font-size: 24px;
+margin-bottom: 15px;
+color: #5a5a5a;
+}
+
+.info-section {
+padding: 50px 0;
+}
+
+.info-header {
+margin-bottom: 30px;
+}
+
+.stat-box {
+text-align: center;
+border: 1px solid #e9e9e9;
+padding: 30px 20px;
+margin-bottom: 20px;
+}
+
+.stat-number {
+font-size: 2.5rem;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.stat-label {
+color: #777;
+font-size: 0.9rem;
+}
+
+.food-image {
+border-radius: 8px;
+overflow: hidden;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+.footer-title {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 18px;
+    transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.footer-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.footer-gallery img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: opacity 0.2s;
+}
+
+.footer-gallery img:hover {
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .about-content {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .top-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-section {
+        height: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 768px) {
+.hero-section {
+height: 300px;
+}
+
+.stat-box {
+margin-bottom: 15px;
+}
+}
